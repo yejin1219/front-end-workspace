@@ -1,3 +1,9 @@
+### 목차
+
+- [HTML 기초](#html-기초)
+- [글자 태그](#글자-태그)
+
+
 # HTML 기초
 
  ## 웹 브라우저 : 인터넷 화면을 보여주는 프로그램
@@ -109,3 +115,50 @@
 <meta name = "author" content="문서 작성자">
 ```
 - keywords 를 사용함으로 옛날에는 검색되게끔 했지만 과한 키워드 추가로 현재는 검색 엔진에서 사용하지 않는다.(구글은 가능)
+
+# 글자 태그
+## hn(Heading)
+- 제목 표시
+- h1(큰 제목) ~ h6(작은 제목)
+- 줄 바꿈 + 볼드체(글씨 굵게) 적용
+
+## p(Paragraph)
+- 문단 구분 
+
+## br(Break)
+- 줄 바꿈
+<!-- hn, p, br 정도만 알아도 됨 밑에서부턴 css로 처리 가능 -->
+
+## hr(Horizontal)
+- 수평 줄 
+
+## pre(Preformat)
+- 입력하는 대로 화면에 표시
+
+## b(Bold), strong
+- 글자를 강조
+- 굵게 표시
+
+## i(Itelic), em(Emphasized)
+- 글자를 기울여서 표시 
+
+## u(Underline)
+- 글자에 밑줄
+
+## s(Strikethrough)
+- 취소선
+
+## mark
+- 형광펜
+
+## small
+- 글자를 작게
+
+## sup(Superscropt Text), sub(Subscript Text)
+- 위/아래 첨자
+
+## q, blockquote
+- 글을 인용할 경우
+
+## abbr(Abbreviation)
+- 약어 표시
