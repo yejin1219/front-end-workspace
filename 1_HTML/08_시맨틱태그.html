@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 태그</title>
+</head>
+<body>
+    <h2>레이아웃 1 : div</h2>
+    <div id="header">
+       <h1>LOGO</h1>
+       <!-- LOGO는 h1으로 감싼다 -->
+
+       <div id="gnb">
+        GNB(Global Navigation Bar)
+       </div>
+       <!-- gnb도 헤더안에 들어가는 경우 있음 (메가커피 홈페이지// 위 로고와 메뉴가 같이 한 묶음으로(가로로) -) -->
+    </div>
+    
+    <div id="gnb">
+        GNB(Global Navigation Bar)
+        <!-- LOGO 와 따로 존재할 수도 있다. (MULE 사이트의 경우) -->
+
+    </div>
+
+   <div id="main">
+    <!-- ** 가로로 쪼갠후 세로로 또 쪼개기 유뷰트ex.(main_content 와 side_bar) -->
+    <div id="main_content">
+        <div id="main_image">
+            Main Image
+        </div>
+        <div id="main_cont_wrap">
+            <div class="content">
+                <!-- id는 똑같은 넘 못씀, class는 가능 -->
+                <h2>Title 1</h2>
+                <p>content 1</p>
+            </div>
+            
+            <div class="content">
+                <h2>Title 2</h2>
+                <p>content 2</p>
+            </div>
+            
+        </div>
+       
+    </div>
+
+    <div id="side_bar">
+        LNB(Local Navigation Bar) 
+    <!-- 해당 페이지에서만 쓰는 메뉴 바들. -->
+
+    </div>
+   
+
+   </div>
+
+   <div id="footer">
+    Footer
+   </div>
+    
+
+
+   <h2>레이아웃 2 : Semantic Tag</h2>
+   <header>
+      <h1>LOGO</h1>
+      <!-- LOGO는 h1으로 감싼다 -->
+
+      <nav>
+       GNB(Global Navigation Bar)
+      </nav>
+      <!-- gnb도 헤더안에 들어가는 경우 있음 (메가커피 홈페이지// 위 로고와 메뉴가 같이 한 묶음으로(가로로) -) -->
+   </header>
+   
+   <nav>
+       GNB(Global Navigation Bar)
+       <!-- LOGO 와 따로 존재할 수도 있다. (MULE 사이트의 경우) -->
+
+   </nav>
+
+  <main>
+    <!-- ** 가로로 쪼갠후 세로로 또 쪼개기 유뷰트ex.(main_content 와 side_bar) -->
+     <div id="main_content">
+        <section id="main_image">
+           Main Image
+        </section>
+        <section id="main_cont_wrap">
+             <article class="content">
+               <!-- id는 똑같은 넘 못씀, class는 가능 -->
+                <h2>Title 1</h2>
+                <p>content 1</p>
+             </article>
+           
+             <article class="content">
+                <h2>Title 2</h2>
+                <p>content 2</p>
+             </article>
+           
+        </section>
+      
+     </div>
+
+     <aside>
+       LNB(Local Navigation Bar) 
+     <!-- 해당 페이지에서만 쓰는 메뉴 바들. -->
+
+     </aside>
+  
+
+  </main>
+
+  <footer>
+   Footer
+  </footer>
+    
+</body>
+</html>
