@@ -75,3 +75,51 @@ div[class$=ss]{
     background: deeppink;
 }
 
+
+/* 9.반응 선택자 */
+.area{
+   width: 100px;
+   height: 100px;
+   cursor: pointer;
+}
+#active-test:active{
+    /* active : 마우스를 눌렀을 때 */
+    background: yellow;
+    color: red;
+}
+
+#hover-test:hover{
+    /* hover : 마우스를 올렸을때 */
+    background: maroon;
+    color: white;
+}
+
+/* input의 name이 user로 시작하는 선택자 */
+input[name^=user]:focus{
+    /* focus:눌렀을때  색 변함 */
+    background: pink;
+
+}
+
+/* 10. 상태 선택자 */
+input[type=checkbox]:checked{
+    width: 20px;
+    height: 20px;
+}
+
+/* input checkbox 선택자 옆에 있는 label(체크된 상태만) */
+input[type=checkbox]:checked+label{
+    font-size: 20px;
+/* 체크된 상태에서만 폰트사이즈 커짐 */
+}
+
+/* 클릭가능할 때 */
+button:enabled{ 
+    background: violet;
+}
+/* 클릭 불가능할 때  */
+button:disabled{ 
+    background: yellowgreen;
+}
+
+
