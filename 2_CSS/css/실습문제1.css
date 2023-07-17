@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: lightsalmon;
+    background: linear-gradient(purple, pink);
+    height: 100vh;
+    padding: 50px;
+}
+
+.profile-card{
+    width: 340px;
+   /* background-color: white;*/
+  
+   margin: 0 auto; /* 가운데 넣을 때  */
+   padding: 20px 5px; 
+  border-radius: 10px;
+  text-align: center;/* 부모에게 가운데 정렬 주면 부모 안에 있는 것들 가운데 정렬됨 */
+}
+.profile-card_main{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.profile-card_main img{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.profile-card_main h1{
+
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+
+.profile-card_list a {
+    display: block;
+    text-decoration: none;
+    /* background-color: lightsalmon; */
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 10px;
+    
+    
+}
+
+
+
+
