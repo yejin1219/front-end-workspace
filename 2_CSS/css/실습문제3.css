@@ -1,0 +1,104 @@
+
+header{
+    display: flex;
+    background-color: black;
+    width: 500px;
+    height:100vh;
+    position: fixed;
+    background-image: url(../../resources/background.jpg);
+    background-size: cover;
+    /* 이미지 사이즈 맞춤 */
+    background-position: center;
+    /* 이미지 가운데로 맞춤 */
+    z-index: 2;
+}
+.header-blackbox{
+    /* width: 500px;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height:100%;
+
+
+}
+.header-content{
+    /* display: flex;
+    position: absolute;
+    color: white;
+    font-weight: lighter;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    z-index: 3;  */
+    /* z-index 사용하려면 position: absolute; 같이 써야 함 */
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: lighter;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.header-content h1{
+    /* font-size: 5rem;
+    font-weight: 30px;
+    text-decoration: underline;-> 밑줄과 글자 사기 간격 조절안됨
+    padding-bottom: 200px; */
+    font-size: 5rem;
+    font-weight: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    /* border와 content 사이에는 padding */
+}
+.header-content ul{
+    /* display: flex;
+    padding: 5px; */
+    font-size: 2rem;
+    /* margin-top: 80px;  또는  .header-content에서 justify-content:space-around;쓰면 간격 벌려줌 */
+   
+}
+.header-content ul li{
+    margin-bottom: 15px;
+}
+
+main{
+    padding-left:500px;
+
+}
+.main-content{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    
+ }
+.main-content img{
+    
+    width: 100%;
+    max-width:800px;
+    margin-bottom: 20px;
+    
+    align-self: center;
+}
+.main-content h2{
+    background-color:white;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+   padding-top: 10px;
+    color: black;
+}
+.main-content p{
+    line-height: 1.7;
+}
