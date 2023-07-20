@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <script src="js/01_BOM.js"></script>
+</head>
+<body>
+    <h2>1. window 객체</h2>
+    <h3>1) window.open()</h3>
+    <button onclick="btn1()">실행 확인</button> 
+    <!-- //bt1 함수 연결 -->
+
+    <h3>2) 타이머(Timer)</h3>
+
+    <h4>window.setTimeout()</h4>
+    <button onclick="btn2()">실행 확인</button>
+
+    <h4>window.setInterval()</h4>
+    <button onclick="btn3()">실행 확인</button>
+
+    <hr>
+
+    <h2>2. location 객체</h2>
+    <button onclick="bt4()">실행</button>
+
+
+    <h3>location.reload()</h3>
+    <button onclick="location.reload()">새로고침1</button>
+
+    <button onclick="location.href=location.href">새로고침2</button>
+
+    <button onclick="location = location">새로고침3</button>
+
+
+    <!-- 페이지 이동 -->
+    <h3>location.href</h3>
+    <button onclick="location.href = 'https://naver.com';">네이버로 이동</button> 
+
+    <button onclick="location = 'http://google.com';">구글로 이동</button>
+
+    <!-- location.href 로 쓰는 것을 추천 -->
+
+
+    <h3>location.assign(), location.replace()</h3>
+    <button onclick="location.assign('http://naver.com')">네이버로 이동</button>
+    <button onclick="location.replace('http://google.com')">구글로 이동</button>
+    <!--차이점 :  assign()은 페이지로 이동 후 뒤로가기 가능 하나 replace()는 뒤로가기 불가능(막아버림) -->
+
+
+    <hr>
+
+    <h2>3. history 객체</h2>
+     <!-- 자바스크립트 내에서 뒤로가기 구현 -->
+    <button onclick="history.back()">back()</button>
+
+    <!-- 앞으로가기 -->
+    <button onclick="history.forward()"> forward()</button>
+
+    <!-- go를 써서 뒤로가기, 앞으로가기 구현, 거의 이걸로 쓰면 됨 -->
+    <button onclick="history.go(-1)">go(-1)</button>
+    <button onclick="history.go(1)"> go(1)</button>
+
+
+    <hr>
+    <h2>4. navigator 객체</h2>
+    <button onclick="btn5()">실행 확인</button>
+   
+    <h2>5. screen 객체</h2>
+    <button onclick="btn6()">실행 확인</button>
+</body> 
+</html>
