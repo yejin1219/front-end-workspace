@@ -60,10 +60,10 @@
         const price = document.querySelector("#price");
          function printValue(){
             result1.innerHTML = `${customer.value}님의 구매 상품은 ${product.value} , 구매 가격은 ${price.value}원 입니다.`;
-            console.log(result1);
-            console.log(customer.value);
-            console.log(price.value);
-            console.log(product.value);
+            // console.log(result1);
+            // console.log(customer.value);
+            // console.log(price.value);
+            // console.log(product.value);
         }
         
     </script>
@@ -119,9 +119,13 @@
 
         function stringSplit(){
             const arr = la1.innerHTML.split(',');
-            for(let value of arr){
-                result3.innerHTML += `<p>${value}</p>`;
-                                    //   p태그 넣는 이유 : 한줄씩 뛰울려고,, 안넣으면 한줄로 출력됨
+            // for(let value of arr){
+            //     result3.innerHTML += `<p>${value}</p>`;
+                
+            //                         //   p태그 넣는 이유 : 한줄씩 뛰울려고,, 안넣으면 한줄로 출력됨
+            // }
+            for(let i=0; i<arr.length;i++){
+                result3.innerHTML += `${arr[i]}`;
             }
         }
     </script>
