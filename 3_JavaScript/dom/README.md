@@ -164,3 +164,17 @@ const 자식객체 = document.createElement(문서객체이름); // 태그
 ```js
 부모객체(문서객체.parentNode).removeChild(자식객체)
 ```
+
+# 이벤트
+<!-- onclick 보다 이벤트로 거의 씀 -->
+- 모든 문서 객체에는 클릭되거나 마우스 위에 올리거나 등 이벤트를 가지고 있다. 
+
+## 이벤트 추가
+- addEventListner : 이벤트 이름과 함수를 지정하면 문서 객체의 해당 이벤트가 실행되면 지정된 함수가 실행된다.
+```js
+문서객체.addEventListner(이벤트이름, 함수)
+```
+## 이벤트 삭제
+```js
+문서객체.removeEventListner(이벤트이름, 함수)
+```
