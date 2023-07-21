@@ -1,14 +1,16 @@
+/* 스크롤 이벤트 적용해 스크롤올릴떄 화면이 딱 맞춰짐 */
+
 header{
     background-color: rgba(125, 189, 189, 0.192);
     position: fixed;
     width: 100%;
-    height: 3rem;
+    height: 48px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    line-height: 3rem;
+    line-height: 48px;
 }
-header h1 {
+header h2 {
     font-size: 2rem;
     font-weight: bolder;
 }
@@ -19,6 +21,7 @@ header nav a{
    margin-left: 70px;
    margin-right: 70px;
    padding: 10px 10px;
+  
 }
 header nav a:hover{
     color: white;
@@ -27,12 +30,64 @@ header div a{
     background-image: url(../../resources/instagram.png);
 }
 main{
-    padding-top: 3rem;
+    box-sizing: border-box;
+    padding-top: 48px;
+    height: 100vh;
+    
     
 }
 main ul {
+    background-color: white;
     width: 8rem;
     height: 100vh;
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+ul li{
+    line-height: 25px;
+    color: rgb(92, 90, 90);
+    font-weight: bold;
+}
+main section{
+    padding-left: 8rem;
+    height: 100%;
+   
+    /* height: 100vh; */
+    
+   
+
+}
+#section1 {
+    background-color: aquamarine;
+    
+}
+#section3 {
+    background-color: aquamarine;
+}
+#top{
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+}
+#top:hover{
+    background-color: rgb(11, 80, 57);
+}
+#top a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+}
