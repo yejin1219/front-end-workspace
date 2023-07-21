@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+</head>
+<body>
+    <h1>이벤트</h1>
+    <nav>
+        <a href="#" class="menu">menu 1</a>
+        <a href="#" class="menu">menu 2</a>
+        <a href="#" class="menu">menu 3</a>
+    </nav>
+    <script>
+
+        let current; //--> 1.바깥에서 let current 선언하고 
+        const h1 = document.querySelector("h1");
+        const nav = document.querySelector("nav");
+        // **nav태그로 접근해서 메뉴클래스로 각 a태그에 접근할 수 있음 !!**
+
+        const menuList = document.querySelectorAll(".menu");
+        //menu라는 클래스에 접근하려고 for문을 돌려서 접근할 필요 없음 
+        
+        
+        nav.addEventListener('click', menuHandler);
+        function menuHandler(e){
+            // **이벤트 에는 e가 숨어있다. 
+            // ** e.target을 쓰면 각 태그에 접근 할수 있음 
+
+
+            //--> 2.current 가 존재한다면 스타일에 transparent(투명)입힘
+            if(current){
+                current.style.backgroundColor = 'transparent';
+                                                  
+            }
+            
+    
+            // console.log(e);
+            // console.log(e.target);
+            e.target.style.backgroundColor = 'yellow'; //--> 3.다시 색깔 입히고 
+            // 선택 된것 색깔 입혀짐 ,, 메뉴 선택 3개 다하면 다 색깔 입혀짐
+              // 그러면 다른 메뉴 선택했을 때 다른 메뉴의 색깔은 사라지게 하려면? -->
+            current = e.target; //--> 4.current에 넣음
+        }
+
+        
+        h1.addEventListener('click', clickHandler);
+        // 원래 함수 호출 할땐 함수이름() 쓰지만 여기서 clickHandler 함수명 넣을 때 ()넣으면 안됨
+
+        function clickHandler(){
+            // this써서 h1에 접근함
+            this.style.backgroundColor = 'dodgerblue';
+        }
+
+
+    </script>
+</body>
+</html>
