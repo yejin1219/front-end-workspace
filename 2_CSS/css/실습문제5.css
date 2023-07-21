@@ -1,0 +1,59 @@
+/* - scale : 지정한 크기만큼 확대 / 축소하는 함수 */
+/* alternate: 다시 되돌아옴 */
+/* animation: boxAni 3s linear infinite alternate; */
+
+body {
+    background-color: blue;
+    background: linear-gradient(45deg, black, rgb(160, 8, 180));
+}
+.container{
+    display: flex;
+    justify-content:center;
+    height: 100vh;
+    align-items: center;
+
+}
+.square{
+    width: 7px;
+   height: 40px;
+   background-color: white;
+   margin: 2px;
+   border-radius: 15px;
+   /* linear를 넣으면 덜 방정맞아짐 */
+   animation: sauareAni 1s linear infinite alternate 1s;
+}
+@keyframes sauareAni{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(2);
+    }
+
+    100%{
+        transform: scaleY(1);
+
+    }
+
+}
+.square:nth-child(1){
+    animation-delay:0.1s;
+}
+.square:nth-child(2){
+    animation-delay:0.2s;
+}
+.square:nth-child(3){
+    animation-delay:0.3s;
+}
+.square:nth-child(4){
+    animation-delay:0.2s;
+}
+.square:nth-child(5){
+    animation-delay:0.3s;
+}
+.square:nth-child(6){
+    animation-delay:0.2s;
+}
+.square:nth-child(7){
+    animation-delay:0.1s;
+}
