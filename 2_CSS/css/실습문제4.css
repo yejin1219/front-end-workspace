@@ -1,0 +1,53 @@
+.grid {
+    /* background-color:antiquewhite;
+    grid-template-rows: repeat(auto-fit, minmax(30%,auto));
+    grid-template-columns: repeat(auto-fit, minmax(30%,auto));
+    grid-auto-rows: 200px;
+    display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+
+    /* row는 계속 바뀌기 때문에 auto로씀 1fr:비율대로 */
+    grid-auto-rows: 1fr;
+}
+.grid div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+.grid h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+.grid p{
+    margin: 20px;
+    font-weight: bold;
+}
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid div:first-child{
+    background-color: indianred;
+}
+.grid div:nth-child(3){
+    background-color: aquamarine;
+}
+.grid div:nth-child(5){
+    background-color: antiquewhite;
+}
+.grid div:nth-child(7){
+    background-color: palevioletred;
+}
+.grid div:nth-child(9){
+    background-color: cadetblue;
+}
+.grid div:nth-child(11){
+    background-color: palegreen;
+}
