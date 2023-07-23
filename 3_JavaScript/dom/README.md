@@ -54,10 +54,10 @@
 
 
 # DOM(Document Object Model)
-- HTNL 문서의 태그들을 객체로 생성하고 객체들의 관계(상/하위) 에 따라 트리 자료구조로 구성한 객체
+- HTML 문서의 태그들을 객체로 생성하고 객체들의 관계(상/하위) 에 따라 트리 자료구조로 구성한 객체
 
 <!-- BOM은 브라우저 제어(새로고침등)
- DOM은 HTNL(HEAD, BODY, 등등의 태그들에 접근)제어 -->
+ DOM은 HTML(HEAD, BODY, 등등의 태그들에 접근)제어 -->
 
  - document 객체는 window 객체의 하위 객체로 DOM 트리의 가장 최상위 객체
  - HTML 태그(요소)를 노드라고 한다.
@@ -125,7 +125,7 @@
 ```
 
 ### style 조작
-- 문서 객체의 스타일으 조작할 때는 style로 접근할 수 있다. 
+- 문서 객체의 스타일을 조작할 때는 style로 접근할 수 있다. 
 - style 속성은 - 기호 대신 캐멀 케이스로 사용
   ex. background-color => backgroundColor
 
