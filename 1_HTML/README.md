@@ -32,7 +32,7 @@
  - main page : index.html
  - sub page : index.html 제외 파일.html 파일들
 
- ## HTNL 내용 작성
+ ## HTML 내용 작성
  1. 이해하기 쉽게 
  2. 논리적으로
  3. 의미있게
