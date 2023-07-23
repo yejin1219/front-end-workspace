@@ -119,14 +119,15 @@
 
         function stringSplit(){
             const arr = la1.innerHTML.split(',');
-            // for(let value of arr){
-            //     result3.innerHTML += `<p>${value}</p>`;
+            for(let value of arr){
+                result3.innerHTML += `<p>${value}</p>`;
                 
-            //                         //   p태그 넣는 이유 : 한줄씩 뛰울려고,, 안넣으면 한줄로 출력됨
-            // }
-            for(let i=0; i<arr.length;i++){
-                result3.innerHTML += `${arr[i]}`;
+                                    //   p태그 넣는 이유 : 한줄씩 뛰울려고,, 안넣으면 한줄로 출력됨
             }
+            // 또 다른 for 문으로 고쳐보기
+            // for(let i=0; i<arr.length;i++){
+            //     result3.innerHTML += `<p>${arr[i]}</p>`;
+            // }
         }
     </script>
 
