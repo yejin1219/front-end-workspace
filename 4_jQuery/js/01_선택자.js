@@ -66,6 +66,7 @@ $(function(){
     $('#div3 :disabled').css('background-color','lightcyan');
     // 3) input 태그 중 체크된 객체 선택 - 사이즈 : 3opx X 3opx 
     $('#div3 :checked').css({'width':'30px', 'height':'30px'});
+    
 
 
      // 4) checkbox에 change 이벤트 핸들러 등록 //
