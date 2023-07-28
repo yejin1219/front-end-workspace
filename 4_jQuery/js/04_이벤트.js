@@ -134,6 +134,41 @@ $('#textarea2').on('keyup',function(e){
             $('#counter').text(currentLength);
           }
 
-    
+});
 
+// 3) 아이디 조건 확인
+// 사용가능한 아이디입니다.
+// 사용 불가능한 아이디입니다.
+const userId = document.querySelector('#userId');
+const idCheck = document.querySelector('#idCheck');
+
+let regExp;
+
+$('#userId').on('input',function(e){
+
+    regExp = /^[a-z][a-z0-9]{4,12}$/;
+    const id = $(e.target).val();
+if(regExp.test(id)){
+    $('#idCheck').text(`사용 가능한 아이디입니다.`).css('color','green');
+}else if(id === ""){
+    $('#idCheck').text("");
+}else{
+    $('#idCheck').text(`사용 불가능한 아이디입니다.`).css('color','red');
+    
+};
+})
+
+// 3. trigger() 메소드
+
+// let count1 =0;
+$('#area3').on('click', function(){
+// $('#counter2').text(++count1);
+
+  let currenCount = parseInt($('#counter2').text());
+  $('#counter2').text(++currenCount);
+
+});
+$('#btn').on('click', function(){
+  $('#area3').trigger('click');
+//    trigger: 위 로직을 나도 쓰겠다.
 });
