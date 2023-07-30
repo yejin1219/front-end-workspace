@@ -46,7 +46,7 @@ $('#area1').append(p2);
 $('#add1').append('<span>B</span>');
 $('#add2').prepend('<span>B</span>');
 // 형제요소로 뒤에 추가 
-$('#add3').after('<spad3n>B</span>'); //
+$('#add3').after('<span>B</span>'); //
 // 형제요소로 앞에 추가 
 $('#add4').before('<span>B</span>');
 
