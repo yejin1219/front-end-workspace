@@ -18,6 +18,9 @@
 
         align-items: center;
       }
+      form span {
+        display: block;
+      }
       form label {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -99,21 +102,23 @@
 
       function userPwdCheck() {
         const reg = /^[!-~]{8,32}$/;
-        return reg.test(userPwd.value());
+        return reg.test(userPwd.value);
       }
 
       userPwd.addEventListener("input", function () {
         if (!userPwdCheck()) {
-          pw.nextElementSibling.innerHTML =
-            "영문자 대/소문자 특수문자, 숫자 포함 8~32자";
-          pw.nextElementSibling.style.color = "red";
+          pw.innerHTML = "영문자 대/소문자 특수문자, 숫자 포함 8~32자";
+          pw.style.color = "red";
         }
       });
 
-      if (userId.value() === "") {
-        id.innerHTML = "필수입력 항목입니다.";
-      }
-      if (userPwd.value() === "") {
+      userId.addEventListener("click", function () {
+        if (userId.value === "") {
+          id.innerHTML = "필수입력 항목입니다.";
+        }
+      });
+
+      if (userPwd.value === "") {
         pw.innerHTML = "필수입력 항목입니다.";
       }
     </script>
